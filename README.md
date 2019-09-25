@@ -1,7 +1,48 @@
 # Community detectability and structural balance dynamics in signed networks
 
-# Abstract
-Dynamical signed networks are ubiquitous in biological,  physical,  and social systems where interactions  between  nodes  may  change  over  time  in  response  to  various  influences  including  the current  connectivity structure.   We use  a stochastic block  model to  derive  formulas for  the com-munity structure that exists in signed networks as a function of connectivity statistics, extendingunsigned community detection results to signed networks.  Our formulas predict the final states ofdynamic networks from their initial value statistics and the transition curves separating final stateregions.  Under structural balance dynamics networks converge to an assortative, homogeneous, ornon-assortative/non-homogeneous final state and can be separated in a statistical parameter space.These methods reveal the factors that contribute to each structure’s formation and can be used topredict and control future connectivity in dynamic networks.
+Dynamical signed networks are networks with both positive and negative connections that change over in response to influences. Networks under the influence of structural balance dynamics tend to form into either two antagonistic communities or one large harmonious community over time. We use simulations to show how networks that are initially complex with many clusters always converge to a low-dimensional structure with either 1 or 2 clusters and that these clusters are assortative in certain parameter regimes.  The final network states are a function of initial network statistics and we show how the contrast eigenvalue of the system breaks away from the remainder of the spectral band as one increases certain model parameters, generating a leading eigenvalue with assortative structure, and therefore a final network composed of this same structure. 
+
+This notebook reproduces select results from the paper "Community detectability and structural balance dynamics in signed networks.
 
 
-This notebook reproduces select results from the paper "Community detectability and structural balance dynamics in signed networks". More specifically we simulate structural balance dynamics in signed networks and show how a network that initially has many complex communities will evolve to a system with only two opposing communities or one global harmonious community.
+## Table of contents
+1. [Structural Balance Dynamics](#structural_balance)
+2. [Separation of signal eigenvalues](#signal_eigvals)
+
+
+
+### Structural Balance Dynamics <a name="structural_balance"></a>
+
+According to structural balance theory nodes in unstable states will tend to more stable states over time. These dynamics are modeled with the dynamical system 
+
+<img src="figures/struc_balance_eq.png" width="70">
+
+Where __Y__ is the connectivity matrix. We simulate the dynamics of a stochastic block model matrix and show the connectivity over time as well as the initial and final state of the matrix.
+
+
+![Screenshot](figures/struc_balance_eq.png)
+
+<img src="figures/structural_balance.pdf" width="70">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Separation of signal eigenvalues<a name="signal_eigvals"></a>
+
+When the contrast eigenvalue separates from the spectral band on the leading eigenvalue side, the network converges to assortative clusters instead of random clusters.  When the homogeneous eigenvalue separates from the spectral band on the leading eigenvalue side, the network converges to a universally harmonious state.
+
+
