@@ -15,12 +15,12 @@ This notebook reproduces select results from the paper "Community detectability 
 
 According to structural balance theory nodes in unstable states will tend to more stable states over time. These dynamics are modeled with the dynamical system 
 
-![Screenshot](figures/structural_balance.pdf)
-
 <img src="figures/struc_balance_eq.png" width="70">
 
 Where __Y__ is the connectivity matrix. We simulate the dynamics of a stochastic block model matrix and show the connectivity over time as well as the initial and final state of the matrix.
 
+
+![Screenshot](figures/struc_balance_eq.png)
 
 <img src="figures/structural_balance.pdf" width="70">
 
