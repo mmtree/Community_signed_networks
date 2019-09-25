@@ -20,9 +20,9 @@ According to structural balance theory nodes in unstable states will tend to mor
 Where __Y__ is the connectivity matrix. We simulate the dynamics of a stochastic block model matrix and show the connectivity over time as well as the initial and final state of the matrix.
 
 
-![Screenshot](figures/struc_balance_eq.png)
+![Screenshot](figures/eigenvalues.png)
 
-<img src="figures/structural_balance.pdf" width="70">
+<img src="figures/eigenvalues.png" width="70">
 
 
 
